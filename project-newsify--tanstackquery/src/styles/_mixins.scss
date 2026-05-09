@@ -1,0 +1,13 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*  example below: how to use mixin 
+
+.card
+{
+@include flex-center;
+}
+ */

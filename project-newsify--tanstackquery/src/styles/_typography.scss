@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url(assets/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url(assets/fonts/Open_Sans/OpenSans-Italic-VariableFont_wdth\,wght.ttf);
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url(assets/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url(assets/fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf);
+    font-style: italic;
+}
+
+html {
+    font-family: "Open Sans", sans-serif;
+}
+
+input,
+textarea,
+button
+
+/* wow jo automatically inerit nehin kartay html class sy unhain assign kia hai*/
+    {
+
+    font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Playfair Display", sans-serif;
+}
+
+
+
+
+
+
+:root {
+    --primary: #DC0A2D;
+    /* Primary 1 in figma */
+
+}
+
+.background-primary {
+    background-color: var(--primary);
+
+}
+
+
+
+
+.text_color--white {
+    color: white;
+}
+
+.text_color-primary {
+    color: var(--primary);
+}

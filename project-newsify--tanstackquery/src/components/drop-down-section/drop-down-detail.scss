@@ -1,0 +1,64 @@
+details {
+    margin: 1em;
+    padding: 1em;
+    border-top: 1px solid #C5C5C5;
+    // border-bottom: 1px solid #C5C5C5;
+
+}
+
+details>summary {
+    list-style: none;
+    font-weight: bolder;
+    font-size: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* remove default downward arrow */
+
+
+details summary::marker {
+    display: none;
+}
+
+.faq details summary::-webkit-details-marker {
+    display: none;
+}
+
+/* ask question about other ::marker not being added that with webkit page 6 */
+
+
+/* ask question about position and click only on arrow to fold out */
+
+
+
+
+details>summary::after
+
+/* add customised downward arrow as pudo element  */
+    {
+
+    content: "";
+    background-image: url(/feather_chevron-down.svg);
+    background-size: cover;
+    height: 2em;
+    width: 2em;
+
+
+}
+
+/* question? set size on arrow */
+/* rotate  */
+details[open]>summary::after {
+    content: "";
+    background-image: url(/feather_chevron-right.svg);
+    background-size: cover;
+
+    height: 2em;
+    width: 2em;
+}
+
+/* learn more addition if text doesnt fill */
