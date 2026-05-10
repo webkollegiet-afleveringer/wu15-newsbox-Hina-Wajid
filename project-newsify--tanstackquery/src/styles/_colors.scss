@@ -1,1 +1,23 @@
-$water: #6493EB;
+:root {
+    --primary: #DC0A2D;
+    /* Primary 1 in figma */
+
+}
+
+.background-primary {
+    background-color: var(--primary);
+
+}
+
+
+
+
+.text_color--white {
+    color: white;
+}
+
+.text_color-primary {
+    color: var(--primary);
+}
+
+$green: #4f8f16;

@@ -1,4 +1,14 @@
 .headline-category {
     display: flex;
+    align-items: center;
     gap: 1em;
+    text-transform: uppercase;
+
+    span {
+
+        font-size: 1rem;
+        font-weight: bolder;
+    }
+
+
 }

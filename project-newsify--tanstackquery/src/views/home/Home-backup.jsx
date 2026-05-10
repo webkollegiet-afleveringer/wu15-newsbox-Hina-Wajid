@@ -1,5 +1,5 @@
 
-import DropDownSection from '../../components/drop-down-section/drop-down-section'
+import DropDownDetail from '../../components/drop-down-section/drop-down-detail'
 import FooterHome from '../../components/footer-home/footer-home'
 import HeaderHome from '../../components/header-home/header-home'
 import './home.scss'
@@ -22,11 +22,11 @@ export default function Home() {
     return (
         <>
             <main>
-                {!isPendingSports && <DropDownSection articles={sportsData?.results} category="Sports" />}
-                {!isPendingBusiness && <DropDownSection articles={businessData?.results} category="Business" />}
-                {!isPendingHealth && <DropDownSection articles={healthData?.results} category="Health" />}
-                {!isPendingTravel && <DropDownSection articles={travelData?.results} category="Travel" />}
-                {!isPendingEurope && <DropDownSection articles={europeData?.results} category="Europe" />}
+                {!isPendingSports && <DropDownDetail articles={sportsData?.results} category="Sports" />}
+                {!isPendingBusiness && <DropDownDetail articles={businessData?.results} category="Business" />}
+                {!isPendingHealth && <DropDownDetail articles={healthData?.results} category="Health" />}
+                {!isPendingTravel && <DropDownDetail articles={travelData?.results} category="Travel" />}
+                {!isPendingEurope && <DropDownDetail articles={europeData?.results} category="Europe" />}
             </main>
         </>
     )

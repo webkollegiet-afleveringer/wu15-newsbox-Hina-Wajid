@@ -12,16 +12,20 @@ export default function FooterHome() {
             <nav className="primaryNavigation">
                 <ul className="primaryNavigation__menu">
                     <li className="primaryNavigation__menuItem">
+
                         <NavLink to="/" className={({ isActive }) => isActive ? "primaryNavigation__menuLink--active" : "primaryNavigation__menuLink"}>
                             <HomeIcon color={color} />
                             Home
                         </NavLink>
                     </li >
-                    <li className="primaryNavigation__menuItem"><NavLink to="/archive/" className={({ isActive }) => isActive ? "primaryNavigation__menuLink--active" : "primaryNavigation__menuLink"}>
-                        <BookmarkIcon color={color} />
-                        Archive
-                    </NavLink>
+
+                    <li className="primaryNavigation__menuItem">
+                        <NavLink to="/archive/" className={({ isActive }) => isActive ? "primaryNavigation__menuLink--active" : "primaryNavigation__menuLink"}>
+                            <BookmarkIcon color={color} />
+                            Archive
+                        </NavLink>
                     </li>
+
                     <li className="primaryNavigation__menuItem">
                         <NavLink to="/popular/" className={({ isActive }) => isActive ? "primaryNavigation__menuLink--active" : "primaryNavigation__menuLink"}>
                             <StarIcon color={color} />

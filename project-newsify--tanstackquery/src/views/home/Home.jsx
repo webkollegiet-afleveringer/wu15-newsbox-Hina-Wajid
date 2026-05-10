@@ -1,7 +1,6 @@
-
-import DropDownSection from '../../components/drop-down-section/drop-down-section'
 import FooterHome from '../../components/footer-home/footer-home'
 import HeaderHome from '../../components/header-home/header-home'
+import DropDownDetail from '../../components/drop-down-section/drop-down-detail'
 import './home.scss'
 /* customed hook */
 import useFetchData from '../../hooks/useFetchData'
@@ -41,11 +40,11 @@ export default function Home() {
     return (
         <>
             <main>
-                {showSports === "true" && (!isPendingSports && <DropDownSection articles={sportsData?.results} category="Sports" />)}
-                {showBusiness === "true" && (!isPendingBusiness && <DropDownSection articles={businessData?.results} category="Business" />)}
-                {showHealth === "true" && (!isPendingHealth && <DropDownSection articles={healthData?.results} category="Health" />)}
-                {showTravel == "true" && (!isPendingTravel && <DropDownSection articles={travelData?.results} category="Travel" />)}
-                {showEuro == "true" && (!isPendingEurope && <DropDownSection articles={europeData?.results} category="Europe" />)}
+                {showSports === "true" && (!isPendingSports && <DropDownDetail articles={sportsData?.results} category="Sports" />)}
+                {showBusiness === "true" && (!isPendingBusiness && <DropDownDetail articles={businessData?.results} category="Business" />)}
+                {showHealth === "true" && (!isPendingHealth && <DropDownDetail articles={healthData?.results} category="Health" />)}
+                {showTravel == "true" && (!isPendingTravel && <DropDownDetail articles={travelData?.results} category="Travel" />)}
+                {showEuro == "true" && (!isPendingEurope && <DropDownDetail articles={europeData?.results} category="Europe" />)}
             </main>
         </>
     )
