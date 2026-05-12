@@ -4,7 +4,7 @@ import HomeIcon from '../icons/home-icon'
 import StarIcon from '../icons/star-icon'
 import SettingsIcon from '../icons/settings-icon'
 import BookmarkIcon from '../icons/bookmark-icon'
-
+/* navLInk will keep eye on url address bar to tell if this link is active so you can toggle class name */
 export default function FooterHome() {
     const color = "#404040"
     return (

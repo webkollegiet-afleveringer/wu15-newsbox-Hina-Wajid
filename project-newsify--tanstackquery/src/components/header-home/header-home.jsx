@@ -4,19 +4,16 @@ import './header-home.scss'
 import { useEffect } from "react";
 
 import HeroHeadlineSettings from "../header_settings.jsx/hero_headline-settings";
-
+import SearchBar from "../search-bar/search-bar";
+/* useLocation returns current pathname from url, you can render specific component for each path  */
 export default function HeaderHome() {
     const location = useLocation();
     return (
         <header>
             <NewsifyLogo />
             {
-                location.pathname === "/" &&
-                <form className="search-form" action="#">
-                    <div className="search-wrap">
-                        <input type="search" name="search-news" id="search-news" placeholder="Search news" />
-                    </div>
-                </form>
+                location.pathname === "/" && <SearchBar />
+
             }
             {
                 location.pathname === "/settings/" &&

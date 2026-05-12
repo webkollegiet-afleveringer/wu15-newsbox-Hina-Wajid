@@ -1,28 +1,66 @@
-.section__news__card {
+@use "../../styles/mixins";
+
+.articleCard {
     display: flex;
-    gap: 10px;
-    // padding: 0.25rem;
+    gap: 15px;
+    padding: 20px;
+    padding-block: 1rem;
+    background-color: white;
     border-top: 1px solid #C5C5C5;
+    transition: all .2s ease;
+
+    &__heading {
+        font-size: 1em;
+        font-weight: bold;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+        padding-inline: 3px;
+        padding-block: 4px;
+    }
+
+
+    &__text {
+
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        // padding: 2px;
+        margin-block: 2px;
+
+    }
+
+    &__img {
+        border-radius: 0.5rem;
+    }
+}
+
+.article__container {
+    position: relative;
+    z-index: 0;
 
 }
 
+.article__iconcontainer {
+    position: absolute;
+    background-color: #46781B;
+    right: 0;
+    z-index: -1;
+    height: 100px;
+    width: 100px;
+    @include mixins.flex-center;
+    border-top: 1px solid #C5C5C5;
+    color: white;
 
-.section__news__card__headline {
-    font-size: 1em;
-
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 1;
-    overflow: hidden;
 }
 
-.section__news__card__text {
+.article__iconcontainer svg {}
 
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    overflow: hidden;
-}
+
+
+
 
 /*
 dots effect

@@ -1,24 +1,27 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+ */
 @font-face {
     font-family: "Open Sans";
-    src: url(assets/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+    src: url(../assets/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
     font-style: normal;
 }
 
 @font-face {
     font-family: "Open Sans";
-    src: url(assets/fonts/Open_Sans/OpenSans-Italic-VariableFont_wdth\,wght.ttf);
+    src: url(../assets/fonts/Open_Sans/OpenSans-Italic-VariableFont_wdth\,wght.ttf);
     font-style: italic;
 }
 
 @font-face {
     font-family: "Playfair Display";
-    src: url(assets/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
+    src: url(../assets/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
     font-style: normal;
 }
 
 @font-face {
     font-family: "Playfair Display";
-    src: url(assets/fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf);
+    src: url(../assets/fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf);
     font-style: italic;
 }
 
@@ -36,6 +39,7 @@ button
     font-family: "Open Sans", sans-serif;
 }
 
+.headline-category-name,
 h1,
 h2,
 h3,
@@ -43,4 +47,5 @@ h4,
 h5,
 h6 {
     font-family: "Playfair Display", sans-serif;
+    font-weight: bolder;
 }

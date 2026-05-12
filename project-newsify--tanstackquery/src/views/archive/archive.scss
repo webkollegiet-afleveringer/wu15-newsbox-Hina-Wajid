@@ -1,0 +1,26 @@
+.section__news__card {
+    display: flex;
+    gap: 10px;
+    // padding: 0.25rem;
+    border-top: 1px solid #C5C5C5;
+    padding: 2rem;
+
+}
+
+
+.section__news__card__headline {
+    font-size: 1em;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+
+.section__news__card__text {
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}

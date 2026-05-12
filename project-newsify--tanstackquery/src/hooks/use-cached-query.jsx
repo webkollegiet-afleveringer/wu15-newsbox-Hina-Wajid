@@ -19,8 +19,11 @@ export default function useCachedQuery(category) {
     const { data, isPending, error } = useQuery({
         queryKey: [category],
         queryFn: getNews,
-        staleTime: 1000 * 60 * 10,
+        staleTime: 1000 * 60 * 100,
     });
 
     return { data, isPending, error };
 }
+
+/* staleTime: 1000 * 60 * 100
+ // 100 minutes */

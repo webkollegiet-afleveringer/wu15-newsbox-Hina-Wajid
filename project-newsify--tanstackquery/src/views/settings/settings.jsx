@@ -1,8 +1,10 @@
 import { Link } from 'react-router-dom'
-import './settings.scss'
+// import './settings.scss'
+import './testing-toggle.scss'
 import NewsifyLogo from '../../components/newsify-logo/newsify-logo'
 import FooterHome from '../../components/footer-home/footer-home'
 import HeadlineCatagory from '../../components/headline__category/headline-category'
+import ButtonToggleDarkMode from '../../components/toggle-button-dark-mode/toggle-button-dark-mode'
 export default function Settings() {
 
     const showEuro = localStorage.getItem("euro") || "true";  /* if default value is not there, then use "true" instead of null*/
@@ -18,15 +20,20 @@ export default function Settings() {
         console.log(event.target.dataset.category); /* this will  tell what is it in the attribute data-category */
         localStorage.setItem(event.target.dataset.category, event.target.checked);
     }
+
+
+
     return (
         <>
-            <main>
+            <main><div className='container'>
                 <div className='flex-display div__setting'>
                     <HeadlineCatagory section_name={"Europe"} />
                     <label className='toggleSwitch'>
                         <input type='checkbox' data-category="euro" onInput={inputHandler} defaultChecked={showEuro === "true"} />
                         <div className='toggleSwitch__base'>
-                            <div className='toggleSwitch__toggle'></div>
+                            <div className='toggleSwitch__toggle'>
+
+                            </div>
                         </div>
                     </label>
                 </div>
@@ -64,8 +71,10 @@ export default function Settings() {
                             <div className='toggleSwitch__toggle'></div>
                         </div>
                     </label>
-
                 </div>
+            </div>
+                <ButtonToggleDarkMode />
+                <p className="p__versioninfo">Version 4.8.15.16.23.42</p>
             </main >
         </>
     )

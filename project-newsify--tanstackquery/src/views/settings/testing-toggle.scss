@@ -1,16 +1,22 @@
 /* settings.scss */
+.container {
+    margin-block: 1.5rem;
+}
 
 /* Category rows */
 .div__setting {
     width: 100%;
-    padding: 0 30px;
+    padding: 20px 30px;
     font-size: 1rem;
     align-items: center;
     justify-content: space-between;
     border-top: 1px solid #d9d9d9;
 }
 
-/* this css file is not attached current css is toggle-testing */
+.div__setting:last-child {
+    border-bottom: 1px solid #d9d9d9;
+}
+
 
 .toggleSwitch {
     display: flex;
@@ -35,21 +41,26 @@
     &__toggle {
         width: 1.9rem;
         height: 1.9rem;
-        // background-color: #FFFFFF;
-        background-color: #192fae;
+        background-color: #FFFFFF;
         border-radius: 50%;
         transition: all 200ms ease;
+        transform: translateX(1.6rem);
     }
 
 }
 
 .toggleSwitch input:checked+.toggleSwitch__base {
-    // transform: translateX(-1.75rem);
-    background-color: rgb(19, 152, 83);
+    background-color: #4D861F;
 }
 
 .toggleSwitch input:checked+.toggleSwitch__base .toggleSwitch__toggle {
     background-color: #FFFFFF;
-    transform: translateX(1.75rem);
+    transform: translateX(0.1rem);
+    overflow: none;
 
+}
+
+.p__versioninfo {
+    display: flex;
+    justify-content: center;
 }
